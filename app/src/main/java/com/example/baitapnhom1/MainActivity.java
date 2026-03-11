@@ -42,7 +42,6 @@ public class MainActivity extends AppCompatActivity implements RoomAdapter.OnRoo
         fabAdd.setOnClickListener(v -> showAddEditDialog(null, -1));
     }
 
-    // Nhiệm vụ của Hiệp (Create) và Văn (Update)
     private void showAddEditDialog(Room room, int position) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         View view = LayoutInflater.from(this).inflate(R.layout.dialog_add_edit_room, null);
@@ -60,7 +59,7 @@ public class MainActivity extends AppCompatActivity implements RoomAdapter.OnRoo
 
         if (isEdit) {
             etRoomId.setText(room.getId());
-            etRoomId.setEnabled(false); // Không cho sửa mã phòng
+            etRoomId.setEnabled(false);
             etRoomName.setText(room.getName());
             etPrice.setText(String.valueOf(room.getPrice()));
             cbIsRented.setChecked(room.isRented());
@@ -76,7 +75,6 @@ public class MainActivity extends AppCompatActivity implements RoomAdapter.OnRoo
             String tenantName = etTenantName.getText().toString().trim();
             String tenantPhone = etTenantPhone.getText().toString().trim();
 
-            // Validate dữ liệu (Nhiệm vụ của Hiệp)
             if (TextUtils.isEmpty(id) || TextUtils.isEmpty(name) || TextUtils.isEmpty(priceStr)) {
                 Toast.makeText(this, "Vui lòng nhập đầy đủ thông tin bắt buộc", Toast.LENGTH_SHORT).show();
                 return;
@@ -93,12 +91,10 @@ public class MainActivity extends AppCompatActivity implements RoomAdapter.OnRoo
             Room newRoom = new Room(id, name, price, isRented, tenantName, tenantPhone);
 
             if (isEdit) {
-                // Nhiệm vụ của Văn (Update)
                 repository.updateRoom(position, newRoom);
                 adapter.notifyItemChanged(position);
                 Toast.makeText(this, "Đã cập nhật", Toast.LENGTH_SHORT).show();
             } else {
-                // Nhiệm vụ của Hiệp (Create)
                 repository.addRoom(newRoom);
                 adapter.notifyItemInserted(roomList.size() - 1);
                 Toast.makeText(this, "Đã thêm phòng", Toast.LENGTH_SHORT).show();
@@ -111,17 +107,14 @@ public class MainActivity extends AppCompatActivity implements RoomAdapter.OnRoo
 
     @Override
     public void onItemClick(Room room, int position) {
-        // Click vào item -> mở màn hình sửa (Nhiệm vụ của Văn)
         showAddEditDialog(room, position);
     }
 
     @Override
     public void onItemLongClick(Room room, int position) {
-        // Nhấn giữ -> Xóa phòng (Nhiệm vụ của Văn)
         showDeleteConfirmDialog(position);
     }
 
-    // Nhiệm vụ của Văn (Delete)
     private void showDeleteConfirmDialog(int position) {
         new AlertDialog.Builder(this)
                 .setTitle("Xác nhận xóa")
