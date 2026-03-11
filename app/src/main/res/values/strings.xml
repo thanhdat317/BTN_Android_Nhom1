@@ -1,3 +1,8 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name">Room Rental Management App</string>
 </resources>
+=======
+    <string name="app_name">Tuan7</string>
+</resources>
+>>>>>>> 870e389 (Initial base project: Room Management App)
