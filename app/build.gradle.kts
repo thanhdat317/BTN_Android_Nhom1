@@ -3,14 +3,23 @@ plugins {
 }
 
 android {
+<<<<<<< HEAD
     namespace = "com.example.baitapnhom1"
+=======
+    namespace = "com.example.tuan7"
+>>>>>>> 2787938b938557769ac5dc8b1a7020698a9c5622
     compileSdk {
         version = release(36)
     }
 
     defaultConfig {
+<<<<<<< HEAD
         applicationId = "com.example.baitapnhom1"
         minSdk = 29
+=======
+        applicationId = "com.example.tuan7"
+        minSdk = 24
+>>>>>>> 2787938b938557769ac5dc8b1a7020698a9c5622
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"

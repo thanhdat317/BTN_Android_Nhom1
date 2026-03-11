@@ -1,25 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    package="com.example.roomrental">
+
+    <application
+        android:allowBackup="true"
+=======
+>>>>>>> 2787938b938557769ac5dc8b1a7020698a9c5622
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
+<<<<<<< HEAD
+=======
+>>>>>>> 870e389 (Initial base project: Room Management App)
+>>>>>>> 2787938b938557769ac5dc8b1a7020698a9c5622
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+<<<<<<< HEAD
         android:theme="@style/Theme.BaiTapNhom1">
+=======
+<<<<<<< HEAD
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+        <activity
+            android:name=".controller.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+=======
+        android:theme="@style/Theme.Tuan7">
+>>>>>>> 2787938b938557769ac5dc8b1a7020698a9c5622
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
+<<<<<<< HEAD
+=======
+>>>>>>> 870e389 (Initial base project: Room Management App)
+>>>>>>> 2787938b938557769ac5dc8b1a7020698a9c5622
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
 
+<<<<<<< HEAD
 </manifest>
+=======
+<<<<<<< HEAD
+</manifest>
+=======
+</manifest>
+>>>>>>> 870e389 (Initial base project: Room Management App)
+>>>>>>> 2787938b938557769ac5dc8b1a7020698a9c5622

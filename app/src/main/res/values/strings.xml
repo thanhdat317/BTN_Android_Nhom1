@@ -1,3 +1,13 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name">BaiTapNhom1</string>
 </resources>
+=======
+<<<<<<< HEAD
+    <string name="app_name">Room Rental Management App</string>
+</resources>
+=======
+    <string name="app_name">Tuan7</string>
+</resources>
+>>>>>>> 870e389 (Initial base project: Room Management App)
+>>>>>>> 2787938b938557769ac5dc8b1a7020698a9c5622
