@@ -1,4 +1,4 @@
-package com.example.baitapnhom1;
+package com.example.roomrental;
 
 import java.util.ArrayList;
 import java.util.List;

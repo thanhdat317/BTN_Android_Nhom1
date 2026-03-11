@@ -1,4 +1,4 @@
-package com.example.baitapnhom1;
+package com.example.roomrental;
 
 public class Room {
     private String id;
